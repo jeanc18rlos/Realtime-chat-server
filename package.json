@@ -1,18 +1,20 @@
 {
-  "name": "rest-realtime-server",
+  "name": "restful_2acespoker",
   "version": "1.0.0",
-  "description": "rest sockets saas",
+  "description": "rest poker saas",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jeanc18rlos/Realtime-chat-server.git"
+    "url": "git+https://gitlab.com/jeanc16rlos/2acespoker.git"
   },
   "author": "Jean Rojas",
   "license": "MIT",
   "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
@@ -24,6 +26,10 @@
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
-    "socket.io": "^2.1.1"
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0"
   }
 }

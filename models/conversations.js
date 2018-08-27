@@ -1,4 +1,4 @@
-const mongoose = require('mongoose'),
+var  mongoose = require('mongoose'),
       Schema = mongoose.Schema,
       bcrypt = require('bcrypt-nodejs');
 //========================================
@@ -6,10 +6,11 @@ const mongoose = require('mongoose'),
 //========================================
 
 // Schema defines how chat messages will be stored in MongoDB
-const ConversationSchema = new Schema({
+var  ConversationSchema = new Schema({
       participants:[
             {
-                  type: Schema.Types.ObjectId, ref: 'User'           
+                  type: Schema.Types.ObjectId, 
+                  ref: 'User'           
              }
       ],
 });
